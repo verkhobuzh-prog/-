@@ -1,0 +1,119 @@
+/* ... (原有 CSS 保持不變, 只添加新部分) */
+
+/* Blog Section */
+.blog {
+    padding: 100px 0;
+    background: linear-gradient(135deg, rgba(135, 206, 235, 0.9) 0%, rgba(74, 144, 226, 0.85) 50%, rgba(46, 139, 87, 0.9) 100%);
+}
+
+.blog h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: #ffffff;
+}
+
+.blog-posts {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.blog-post {
+    background: linear-gradient(135deg, rgba(74, 144, 226, 0.9) 0%, rgba(46, 139, 87, 0.85) 50%, rgba(34, 139, 34, 0.9) 100%);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(74, 144, 226, 0.3);
+}
+
+.blog-post h3 {
+    font-size: 1.4rem;
+    color: #ffffff;
+}
+
+.blog-post p {
+    color: #f3f4f6;
+}
+
+.blog-post a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* Services Toggle Button */
+.services-toggle-button {
+    margin-top: 2rem;
+    padding: 1rem 2rem;
+    background: linear-gradient(135deg, #ff8c00 0%, #ff4500 100%);
+    color: #ffffff;
+    border: none;
+    border-radius: 50px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    animation: blink 1.5s infinite;
+    box-shadow: 0 4px 15px rgba(255, 140, 0, 0.6);
+}
+
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1; }
+}
+
+.hidden {
+    display: none;
+}
+
+/* Gallery Section */
+.gallery {
+    padding: 100px 0;
+    background: linear-gradient(135deg, rgba(74, 144, 226, 0.9) 0%, rgba(46, 139, 87, 0.85) 50%, rgba(34, 139, 34, 0.9) 100%);
+    text-align: center;
+}
+
+.gallery h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #ffffff;
+}
+
+.gallery-grid {
+    position: relative;
+    height: 400px;
+    overflow: hidden;
+}
+
+.gallery-grid img {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    transition: opacity 0.5s ease;
+}
+
+#gallery-prev, #gallery-next {
+    padding: 1rem 2rem;
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    margin: 1rem;
+}
+
+/* YouTube Button */
+.youtube-button {
+    background: linear-gradient(135deg, #ff0000 0%, #c4302b 100%);
+    color: white;
+    box-shadow: 0 4px 15px rgba(255, 0, 0, 0.4);
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    text-decoration: none;
+}
+
+.youtube-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(255, 0, 0, 0.6);
+}
